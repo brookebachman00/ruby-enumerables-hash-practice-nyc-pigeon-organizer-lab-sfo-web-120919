@@ -4,7 +4,6 @@ def nyc_pigeon_organizer(data)
   data.each do |key,value|
     value.each do |baby_key,names|
       names.each do |name|
-
         if !new_hash[name]
           new_hash[name] = {}
         end
