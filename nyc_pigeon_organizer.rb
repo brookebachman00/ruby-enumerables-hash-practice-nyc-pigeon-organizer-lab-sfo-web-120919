@@ -4,11 +4,17 @@ def nyc_pigeon_organizer(data)
   data.each do |key,value|
     value.each do |baby_key,names|
       names.each do |name|
-    binding.pry
-    new_hash[name] = {
-
-    }
+    
+        if !new_hash[name]
+          new_hash[name] = {}
+        end
+        if !new_hash[name][key]
+          new_hash[name][key] = []
+        end
+        new_hash[name][key] << baby_key
+        
       end
     end
   end
+  binding.pry
 end
