@@ -5,8 +5,9 @@ def nyc_pigeon_organizer(data)
     value.each do |baby_key,baby_value|
     binding.pry
     new_hash[pigeon] = {
-      
+
     }
+    end
 
   end
   # write your code here!
